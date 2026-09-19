@@ -1,4 +1,24 @@
+/* ===== Base ===== */
+:root {
+  --color-text: #fff;
+  --color-background: #6f2b99;
+  --color-links: #d4d013;
+  --font-heading: "Berkshire Swash", serif;
+  --font-body: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+/* ===== Typography ===== */
+h1,
+h2 {
+  font-family: var(--font-heading);
+}
+/* ===== Layout ===== */
+/* ===== Components ===== */
+/* ===== Media ===== */
 nav img {
-  width: 24px;
-  height: 24px;
+  width: 10%;
+  height: 10%;
 }
