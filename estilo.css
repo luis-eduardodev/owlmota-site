@@ -1,7 +1,10 @@
 /* ===== Base ===== */
 :root {
-  --color-text: #fff;
-  --color-background: #6f2b99;
+  --color-text-black-mode: #fff;
+  --color-text-White-mode: #000000;
+  --color-background-black-mode: #131212;
+  --color-background-white-mode: #fff;
+  --color-border-image: #5504c4;
   --color-links: #d4d013;
   --font-heading: "Berkshire Swash", serif;
   --font-body: "Josefin Sans", sans-serif;
@@ -9,16 +12,30 @@
 
 body {
   font-family: var(--font-body);
+  background-color: var(--color-background-black-mode);
+  color: var(--color-text-black-mode);
 }
 /* ===== Typography ===== */
 h1,
 h2 {
   font-family: var(--font-heading);
 }
+a {
+  color: var(--color-links);
+}
 /* ===== Layout ===== */
 /* ===== Components ===== */
-/* ===== Media ===== */
 nav img {
-  width: 10%;
-  height: 10%;
+  width: 24px;
+  height: 24px;
 }
+#titulo-owl {
+  height: 100%;
+  width: 200px;
+}
+
+iframe.decoracao {
+  border: var(--color-border-image) 1px solid;
+  box-shadow: var(--color-border-image);
+}
+/* ===== Media ===== */
