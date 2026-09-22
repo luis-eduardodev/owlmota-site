@@ -1,19 +1,20 @@
 /* ===== Base ===== */
 :root {
-  --color-text-black-mode: #fff;
-  --color-text-White-mode: #000000;
-  --color-background-black-mode: #131212;
-  --color-background-white-mode: #fff;
+  --color-text: #fff;
+  --color-background: #131212;
+  --color-background-menu: #212121;
+  --color-background-footer: #1c1b1b;
   --color-border-image: #5504c4;
   --color-links: #d4d013;
+  --color-links-hover: #eeeb3f;
   --font-heading: "Berkshire Swash", serif;
   --font-body: "Josefin Sans", sans-serif;
 }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-background-black-mode);
-  color: var(--color-text-black-mode);
+  background-color: var(--color-background);
+  color: var(--color-text);
 
   max-width: 900px;
   padding: 15px;
@@ -24,31 +25,30 @@ h1,
 h2 {
   font-family: var(--font-heading);
 }
+
+h2 {
+  text-align: center;
+}
+
 a {
   color: var(--color-links);
 }
+a:hover {
+  color: var(--color-links-hover);
+}
 /* ===== Layout ===== */
-/* ===== Components ===== */
 section {
-  margin-bottom: 5px;
+  margin-bottom: 40px;
 }
-
-nav img {
-  width: 24px;
-  height: 24px;
-}
-
-iframe.decoracao {
-  border: var(--color-border-image) 1px solid;
-  box-shadow: 0 0 10px var(--color-border-image);
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-iframe.spot-deco {
-  height: 152px;
-}
-footer.copyright {
-  background-color: #1c1b1b;
+/* ===== Components ===== */
+/* --- Header --- */
+.menu {
+  background-color: var(--color-background-menu);
+  border-radius: 5px;
+  border-bottom: 3px solid var(--color-border-image);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .titulo-owl {
   height: 100%;
@@ -60,14 +60,22 @@ footer.copyright {
 .redes-link {
   margin: 5px;
 }
-.menu {
-  background-color: #212121;
-  border-radius: 5px;
-  border-bottom: 3px solid var(--color-border-image);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+nav img {
+  width: 24px;
+  height: 24px;
 }
+/* --- Media embeds --- */
+iframe.decoracao {
+  border: var(--color-border-image) 1px solid;
+  box-shadow: 0 0 10px var(--color-border-image);
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+iframe.spot-deco {
+  height: 152px;
+  width: 100%;
+}
+/* --- Photo grid --- */
 .menu-fotos {
   display: grid;
   gap: 5px;
@@ -86,4 +94,17 @@ footer.copyright {
   box-shadow: 0 0 2px var(--color-border-image);
   object-fit: cover;
 }
+/* --- Footer --- */
+footer.copyright {
+  background-color: var(--color-background-footer);
+}
+
 /* ===== Media ===== */
+@media (min-width: 900px) {
+  .sobre-text {
+    align-items: center;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
