@@ -74,6 +74,8 @@ iframe.decoracao {
 iframe.spot-deco {
   height: 152px;
   width: 100%;
+  border: 1px solid var(--color-border-image);
+  box-shadow: 0 0 10px var(--color-border-image);
 }
 /* --- Photo grid --- */
 .menu-fotos {
