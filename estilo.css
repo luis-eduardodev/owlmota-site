@@ -114,10 +114,17 @@ iframe.decoracao {
   aspect-ratio: 16/9;
 }
 iframe.spot-deco {
+  margin: 5px;
   height: 152px;
   width: 100%;
   border: 1px solid var(--color-border-image);
   box-shadow: 0 0 10px var(--color-border-image);
+  transition: 1.2s;
+}
+iframe.spot-deco:hover {
+  border: 1px solid var(--color-links);
+  box-shadow: 0 0 10px var(--color-links);
+  transition: 1.3s;
 }
 /* --- Photo grid --- */
 .menu-fotos {
@@ -137,6 +144,12 @@ iframe.spot-deco {
   border: 1px solid var(--color-border-image);
   box-shadow: 0 0 2px var(--color-border-image);
   object-fit: cover;
+  transition: 1.3s;
+}
+.fotos-sobre:hover {
+  box-shadow: 0 0 2px var(--color-links);
+  border: 1px solid var(--color-links);
+  transition: 1.3s;
 }
 /* --- Footer --- */
 footer.copyright {
