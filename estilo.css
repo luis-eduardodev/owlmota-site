@@ -29,6 +29,9 @@ h2 {
 h2 {
   text-align: center;
 }
+h3 {
+  text-align: center;
+}
 
 a {
   color: var(--color-links);
@@ -44,6 +47,22 @@ a:hover {
 /* ===== Layout ===== */
 section {
   margin-bottom: 40px;
+}
+
+article {
+  height: 130px;
+  width: 300px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--color-border-image);
+  background-color: var(--color-background-menu);
+  transition: 1.3s;
+}
+
+article:hover {
+  box-shadow: 0 0 10px var(--color-links);
+  transition: 1.3s;
 }
 .link-down {
   padding: 5px;
@@ -61,7 +80,7 @@ section {
 .nav-down {
   display: flex;
   flex-direction: column;
-  align-items: normal;
+  align-items: center;
 }
 /* ===== Components ===== */
 /* --- Header --- */
